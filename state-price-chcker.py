@@ -11,6 +11,8 @@ import xlrd
 
 
 def state_checker():
+
+    # Set the member type here.
     # member = 'aca'
     # member = 'pro'
     member = 'sw'
@@ -41,7 +43,7 @@ def state_checker():
     driver = webdriver.Chrome()
     # driver = webdriver.PhantomJS()
 
-
+    # Set URL according to member type
     if (member == 'aca'):
         base_url = "https://joinwef.org/main_form_WEF.php?code=58882986575d0&fName=Pantheon&lName=Member10"
     elif (member == 'pro'):
